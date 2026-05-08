@@ -1,0 +1,110 @@
+[gd_scene format=3 uid="uid://bbtx6l668y82g"]
+
+[ext_resource type="Texture2D" uid="uid://c2plvnl7i1bj7" path="res://Assets/Sprites/coin.png" id="2_g4flr"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_55rbv"]
+atlas = ExtResource("2_g4flr")
+region = Rect2(0, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_6a7co"]
+atlas = ExtResource("2_g4flr")
+region = Rect2(16, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_lk33r"]
+atlas = ExtResource("2_g4flr")
+region = Rect2(32, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_gv1gb"]
+atlas = ExtResource("2_g4flr")
+region = Rect2(48, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_all2w"]
+atlas = ExtResource("2_g4flr")
+region = Rect2(64, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_m3h0p"]
+atlas = ExtResource("2_g4flr")
+region = Rect2(80, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_3fw0c"]
+atlas = ExtResource("2_g4flr")
+region = Rect2(96, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_y23yr"]
+atlas = ExtResource("2_g4flr")
+region = Rect2(112, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_cxwvm"]
+atlas = ExtResource("2_g4flr")
+region = Rect2(128, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_c0ueq"]
+atlas = ExtResource("2_g4flr")
+region = Rect2(144, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_m0aj0"]
+atlas = ExtResource("2_g4flr")
+region = Rect2(160, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_3ytwp"]
+atlas = ExtResource("2_g4flr")
+region = Rect2(176, 0, 16, 16)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_t61vu"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_55rbv")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_6a7co")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_lk33r")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_gv1gb")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_all2w")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_m3h0p")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_3fw0c")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_y23yr")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_cxwvm")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_c0ueq")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_m0aj0")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_3ytwp")
+}],
+"loop": true,
+"name": &"default",
+"speed": 15.0
+}]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_dgxsf"]
+radius = 5.0
+
+[node name="Coin" type="Area2D" unique_id=1853846999]
+collision_mask = 2
+
+[node name="Sprite" type="AnimatedSprite2D" parent="." unique_id=189278113]
+sprite_frames = SubResource("SpriteFrames_t61vu")
+autoplay = "default"
+
+[node name="Collison Shape" type="CollisionShape2D" parent="." unique_id=905670633]
+shape = SubResource("CircleShape2D_dgxsf")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

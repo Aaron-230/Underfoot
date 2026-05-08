@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://bo8jpfda773p"
+path="res://.godot/imported/Digital Horizons.ogg-ec96b59b3ca87ed3a09cddc660a7ccb7.oggvorbisstr"
+
+[deps]
+
+source_file="res://Assets/Audio/Digital Horizons.ogg"
+dest_files=["res://.godot/imported/Digital Horizons.ogg-ec96b59b3ca87ed3a09cddc660a7ccb7.oggvorbisstr"]
+
+[params]
+
+loop=true
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

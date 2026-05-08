@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://big4oy3ddk2d8"
+path="res://.godot/imported/Kavkaz - Starly Kavkaz Instagram Version Reverblaster Kavkaz TikTok Remix.ogg-5ebf70456722448dd8448cf39253b90e.oggvorbisstr"
+
+[deps]
+
+source_file="res://Assets/Audio/Kavkaz - Starly Kavkaz Instagram Version Reverblaster Kavkaz TikTok Remix.ogg"
+dest_files=["res://.godot/imported/Kavkaz - Starly Kavkaz Instagram Version Reverblaster Kavkaz TikTok Remix.ogg-5ebf70456722448dd8448cf39253b90e.oggvorbisstr"]
+
+[params]
+
+loop=true
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4
