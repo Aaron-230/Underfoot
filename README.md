@@ -1,81 +1,50 @@
 ﻿
 # Underfoot
 
-**Underfoot** is a high-stakes 2D pursuit platformer where movement is survival. Players must navigate treacherous terrain while being hunted by a "Sentinel" that tracks, jumps, and adapts to the environment in real-time.
+Underfoot is a 2D, Pixelated Platformer Game which has 4 levels with each having an enemy that is difficult to dodge after each level.
 
-### 📍 Where to use it
+## 🚀 About the Project
 
--   **Web (Primary):** Playable instantly in any modern browser via itch.io. This version is optimized for Chrome, Firefox, and Edge.
-    
--   **Compatibility:** Designed for Desktop browsers with keyboard support.
-    
+Underfoot is a 2D, Pixelated Platformer Game which has 4 levels (In Sequential Order): 
 
-----------
+ 1. The Endless Grasslands
+ 2.  The Dry Wastelands
+ 3. The Gold Rush
+ 4. The Harsh Winters 
 
-### 🛠 Built With
+Each Level has one enemy. On Advancing each Level, the Enemy gets more difficult to dodge than the previous ones. There are 4 enemies overall:
 
--   **Engine:** [Godot Engine 4.x](https://godotengine.org/)
-    
--   **Language:** GDScript
-    
--   **Physics:** Godot 2D Physics Engine.
-    
--   **Systems:** Raycast-based edge detection and proximity-based target acquisition.
-    
+1. Slime - Can only move Left or Right and Cannot chase Player. (Only Moves Left or Right in an continuous motion)
+2. Cactus - Can only move Left or Right but now Can Chase Player. (Cannot Jump).
+3. Purple Slime - Same as the original Slime. Just different Genes ig.
+4.  Bomb - Can move Left or Right and Can also Jump. Also can chase Player and can stop before a cliff.
 
-----------
+You can play this game in [Itch.io](https://itch.io/). You can find the playable link in the Demo Section after the Image
 
-### 🎮 Demo
+## 🛠️ Built With
 
-![enter image description here](https://github.com/Aaron-230/Underfoot/blob/main/Images/image.png)
+**Engine:** Godot v4.6.1 Stable
+**Genre:** Platform
+**Style:** Pixelated, 2D
+**Physics:** Godot 2D Physics Engine
+
+## 📺 Demo
+
+![Startup Menu](https://github.com/Aaron-230/Underfoot/blob/main/Images/image.png)
 
 <iframe frameborder="0" src="https://itch.io/embed/4552405?bg_color=222222&amp;fg_color=eeeeee&amp;link_color=0484d1&amp;border_color=4e4e4e" width="552" height="167"><a href="https://aaron-230.itch.io/underfoot">Underfoot by Aaron-230</a></iframe>
-----------
 
-### 🤝 How to Contribute
 
-We welcome contributions to refine the Sentinel's behavior and level design!
+## 🤝 Contributing
 
-1.  **Fork** the project.
-    
-2.  **Create a Feature Branch** (`git checkout -b feature/ImprovedAI`).
-    
-3.  **Commit your Changes** (`git commit -m 'Added Coyote Time to player movement'`).
-    
-4.  **Push to the Branch** (`git push origin feature/ImprovedAI`).
-    
-5.  **Open a Pull Request**.
-    
+Contributions are what make the open-source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
 
-**Roadmap for Contributors:**
+1.  **Fork** the Project.
+2.  Create your **Feature Branch** (`git checkout -b feature/AmazingFeature`).
+3.  **Commit** your Changes (`git commit -m 'Add some AmazingFeature'`).
+4.  **Push** to the Branch (`git push origin feature/AmazingFeature`).
+5.  Open a **Pull Request**.
 
--   Implementing "Coyote Time" for more forgiving platforming.
-    
--   Refining AI pathfinding on moving platforms.
-    
--   Adding sound triggers for jumping and landing.
-    
+## 📄 License
 
-----------
-
-### 🚀 Deployment (Web Only)
-
-To deploy the latest version of **Underfoot** to itch.io:
-
-1.  **Export Settings:** * In Godot, go to **Project > Export** and select the **Web** preset.
-    
-    -   Set **VRAM Compression** to `Mobile` (ensures faster loading on the web).
-        
-    -   Ensure **Export With Debug** is unchecked for the final upload.
-        
-2.  **File Prep:**
-    
-    -   Export as `index.html`.
-        
-    -   Select all generated files (`index.html`, `index.js`, `index.pck`, etc.) and compress them into a **flat ZIP** (do not zip a folder; zip the files directly).
-        
-3.  **itch.io Configuration:**
-    
-    -   Upload the ZIP and select **"This file will be played in the browser."**
-        
-    -   **Crucial:** Enable **"SharedArrayBuffer support"** in the itch.io dashboard, or the game will not load.
+Distributed under the MIT License. See `LICENSE` for more information.
